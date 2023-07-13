@@ -34,6 +34,8 @@ global.apiKey_7 = "e701311bc9b2249184c539cd496d8466";
 global.apiKey_8 = "26fd80a7289d79b300b99af28392c8c7";
 global.apiKey_9 = "d7dfd99147ac538715d80f39a0277163";
 global.apiKey_10 = "1321923f82f3680d72f02d2147d154b6";
+global.apiKey_11 = "52167bc25aac72582194886b1a883d2e";
+
 
 global.apiKey_11 = "36b7d60e3aa710516f138835973345e5";
 global.apiKey_12 = "1382e204787b970f3b304a0a0e7a3cd1";
@@ -87,8 +89,13 @@ async function fetchAPIDataForLocal(endpoint) {
 // ========== { carousel news} ========== \\
 async function carouselNews() {
   try {
+<<<<<<< HEAD
     global.api.apiKeys = global.apiKey_11;
     global.maxfetch = "10";
+=======
+    global.api.apiKeys = global.apiKey_6;
+    global.maxfetch = "11";
+>>>>>>> b78738fd89bee61e7942c624e989c40d91fa1a5c
     fetchAPIData("general").then(function (data) {
       carouselarticles = data.articles;
       console.log(carouselarticles);
@@ -252,7 +259,11 @@ async function carouselNews() {
 // ========== { display local from gnews.io} ========== \\
 async function displayLocalNews() {
   try {
+<<<<<<< HEAD
     global.api.apiKeys = global.apiKey_12;
+=======
+    global.api.apiKeys = global.apiKey_11;
+>>>>>>> b78738fd89bee61e7942c624e989c40d91fa1a5c
     global.maxfetch = "4";
     fetchAPIDataForLocal("local").then(function (data) {
       localarticles = data.articles.slice(0, 4);
@@ -288,7 +299,11 @@ async function displayLocalNews() {
 // ========== { display TrendNews from gnews.io} ========== \\
 async function displayTrendingNews() {
   try {
+<<<<<<< HEAD
     global.api.apiKeys = global.apiKey_13;
+=======
+    global.api.apiKeys = global.apiKey_11;
+>>>>>>> b78738fd89bee61e7942c624e989c40d91fa1a5c
     global.maxfetch = "3";
     fetchAPIData("general").then(function (data) {
       trendarticles = data.articles;
@@ -309,10 +324,14 @@ async function displayTrendingNews() {
                             <h3 class="px-2 text-lg font-bold leading-tight mb-2">
                               <a href="${articles.url}">${articles.title}</a>
                             </h3>
+<<<<<<< HEAD
                             <p class="px-2 hidden md:block text-gray-600 leading-tight mb-1">${articles.description.slice(
             0,
             100
           )}...</p>
+=======
+                            <p class="hidden md:block  leading-tight mb-1">${articles.description.slice(0, 100)}...</p>
+>>>>>>> b78738fd89bee61e7942c624e989c40d91fa1a5c
                             <span
                                 class="px-2 inline-block h-3 border-l-2 border-red-600 mr-2"></span>${articles.publishedAt.slice(
             0,
@@ -332,7 +351,11 @@ async function displayTrendingNews() {
 // ========== { display BusinessNews from gnews.io} ========== \\
 async function displayBusinessNews() {
   try {
+<<<<<<< HEAD
     global.api.apiKeys = global.apiKey_14;
+=======
+    global.api.apiKeys = global.apiKey_11;
+>>>>>>> b78738fd89bee61e7942c624e989c40d91fa1a5c
     global.api.maxfetch = "3";
     fetchAPIData("business").then(function (data) {
       businessarticles = data.articles;
@@ -353,10 +376,14 @@ async function displayBusinessNews() {
                             <h3 class="px-2 text-lg font-bold leading-tight mb-2">
                               <a href="${articles.url}">${articles.title}</a>
                             </h3>
+<<<<<<< HEAD
                             <p class="px-2 hidden md:block text-gray-600 leading-tight mb-1">${articles.description.slice(
             0,
             100
           )}...</p>
+=======
+                            <p class="hidden md:block  leading-tight mb-1">${articles.description.slice(0, 100)}...</p>
+>>>>>>> b78738fd89bee61e7942c624e989c40d91fa1a5c
                             <span
                                 class="px-2 inline-block h-3 border-l-2 border-red-600 mr-2 "></span>${articles.publishedAt.slice(
             0,
@@ -377,7 +404,11 @@ async function displayBusinessNews() {
 // ========== { display EntertainmentNews from gnews.io} ========== \\
 async function displayEntertainmentNews() {
   try {
+<<<<<<< HEAD
     global.api.apiKeys = global.apiKey_15;
+=======
+    global.api.apiKeys = global.apiKey_11;
+>>>>>>> b78738fd89bee61e7942c624e989c40d91fa1a5c
     global.api.maxfetch = "3";
     fetchAPIData("entertainment").then(function (data) {
       entertainmentarticles = data.articles;
@@ -398,10 +429,14 @@ async function displayEntertainmentNews() {
                             <h3 class="px-2 text-lg font-bold leading-tight mb-2">
                               <a href="${articles.url}">${articles.title}</a>
                             </h3>
+<<<<<<< HEAD
                             <p class="px-2 hidden md:block text-gray-600 leading-tight mb-1">${articles.description.slice(
             0,
             100
           )}...</p>
+=======
+                            <p class="hidden md:block  leading-tight mb-1">${articles.description.slice(0, 100)}...</p>
+>>>>>>> b78738fd89bee61e7942c624e989c40d91fa1a5c
                             <span
                                 class="px-2 inline-block h-3 border-l-2 border-red-600 mr-2"></span>${articles.publishedAt.slice(
             0,
@@ -422,7 +457,11 @@ async function displayEntertainmentNews() {
 // ========== { display EntertainmentNews from gnews.io} ========== \\
 async function displaySportsNews() {
   try {
+<<<<<<< HEAD
     global.api.apiKeys = global.apiKey_16;
+=======
+    global.api.apiKeys = global.apiKey_11;
+>>>>>>> b78738fd89bee61e7942c624e989c40d91fa1a5c
     global.api.maxfetch = "3";
     fetchAPIData("sports").then(function (data) {
       sportsarticles = data.articles;
@@ -443,10 +482,14 @@ async function displaySportsNews() {
                             <h3 class="px-2 text-lg font-bold leading-tight mb-2">
                               <a href="${articles.url}">${articles.title}</a>
                             </h3>
+<<<<<<< HEAD
                             <p class="px-2 hidden md:block text-gray-600 leading-tight mb-1">${articles.description.slice(
             0,
             100
           )}...</p>
+=======
+                            <p class="hidden md:block leading-tight mb-1">${articles.description.slice(0, 100)}...</p>
+>>>>>>> b78738fd89bee61e7942c624e989c40d91fa1a5c
                             <span
                                 class="px-2 inline-block h-3 border-l-2 border-red-600 mr-2"></span>${articles.publishedAt.slice(
             0,
@@ -467,7 +510,11 @@ async function displaySportsNews() {
 // ========== { display EntertainmentNews from gnews.io} ========== \\
 async function displayScienceNews() {
   try {
+<<<<<<< HEAD
     global.api.apiKeys = global.apiKey_17;
+=======
+    global.api.apiKeys = global.apiKey_11;
+>>>>>>> b78738fd89bee61e7942c624e989c40d91fa1a5c
     global.api.maxfetch = "3";
     fetchAPIData("science").then(function (data) {
       sciencearticles = data.articles;
@@ -488,10 +535,14 @@ async function displayScienceNews() {
                             <h3 class="px-2 text-lg font-bold leading-tight mb-2">
                               <a href="${articles.url}">${articles.title}</a>
                             </h3>
+<<<<<<< HEAD
                             <p class="px-2 hidden md:block text-gray-600 leading-tight mb-1">${articles.description.slice(
             0,
             100
           )}...</p>
+=======
+                            <p class="hidden md:block leading-tight mb-1">${articles.description.slice(0, 100)}...</p>
+>>>>>>> b78738fd89bee61e7942c624e989c40d91fa1a5c
                             <span
                                 class="px-2 inline-block h-3 border-l-2 border-red-600 mr-2"></span>${articles.publishedAt.slice(
             0,
@@ -509,10 +560,17 @@ async function displayScienceNews() {
   }
 }
 
+<<<<<<< HEAD
 // ========== { display EntertainmentNews from gnews.io} ========== \\
 async function displayTechnologyNews() {
   try {
     global.api.apiKeys = global.apiKey_18;
+=======
+// // ========== { display TechnologyNews from gnews.io} ========== \\
+async function displayTechnologyNews() {
+  try {
+    global.api.apiKeys = global.apiKey_11;
+>>>>>>> b78738fd89bee61e7942c624e989c40d91fa1a5c
     global.api.maxfetch = "3";
     fetchAPIData("technology").then(function (data) {
       technologyarticles = data.articles;
@@ -533,10 +591,14 @@ async function displayTechnologyNews() {
                             <h3 class="px-2 text-lg font-bold leading-tight mb-2">
                               <a href="${articles.url}">${articles.title}</a>
                             </h3>
+<<<<<<< HEAD
                             <p class="px-2 hidden md:block text-gray-600 leading-tight mb-1">${articles.description.slice(
             0,
             100
           )}...</p>
+=======
+                            <p class="hidden md:block leading-tight mb-1">${articles.description.slice(0, 100)}...</p>
+>>>>>>> b78738fd89bee61e7942c624e989c40d91fa1a5c
                             <span
                                 class="px-2 inline-block h-3 border-l-2 border-red-600 mr-2"></span>${articles.publishedAt.slice(
             0,
@@ -552,9 +614,152 @@ async function displayTechnologyNews() {
   } catch (error) {
     console.error("An error occurred:", error.message);
   }
+  // ========== { function to categorize} ========== \\
+}
+// // ========== { display BusinessCategoryPage from gnews.io} ========== \\
+async function businessCategoryPage() {
+  try {
+    global.api.apiKeys = global.apiKey_11;
+    global.api.maxfetch = "9";
+    fetchAPIData("business").then(function (data) {
+      businessarticles = data.articles;
+      console.log(businessarticles);
+
+      businessarticles.forEach((articles) => {
+        const div = document.createElement("div");
+        div.classList =
+          "flex-shrink max-w-full w-full sm:w-1/3 px-3 pb-3 pt-3 sm:pt-0 border-b-2 sm:border-b-0 border-dotted border-gray-100 bg-white dark:bg-gray-800 text-black dark:text-white";
+        div.innerHTML = `
+        <div class="flex-row sm:block hover-img">
+          <a href="${articles.url}">
+            <img class="max-w-full w-full mx-auto" src="${articles.image}" alt="alt title">
+          </a>
+        <div class="py-0 sm:py-3 pl-3 sm:pl-0">
+          <h3 class="text-lg font-bold leading-tight mb-2">
+            <a href="${articles.url}">${articles.title}</a>
+          </h3>
+            <p class="hidden md:block leading-tight mb-1">${articles.description}</p>
+            <a class="text-gray-500" href="${articles.url}"><span class="inline-block h-3 border-l-2 border-red-600 mr-2"></span>${articles.publishedAt}</span></a>
+        </div>
+        </div>
+        `;
+        document.querySelector("#business-news").appendChild(div);
+      });
+    });
+  } catch (error) {
+    console.error("An error occurred:", error.message);
+  }
+}
+// // ========== { display EntertainmentCategoryPage from gnews.io} ========== \\
+async function entertainmentCategoryPage() {
+  try {
+    global.api.apiKeys = global.apiKey_11;
+    global.api.maxfetch = "9";
+    fetchAPIData("entertainment").then(function (data) {
+      entertainmentarticles = data.articles;
+      console.log(entertainmentarticles);
+
+      entertainmentarticles.forEach((articles) => {
+        const div = document.createElement("div");
+        div.classList =
+          "flex-shrink max-w-full w-full sm:w-1/3 px-3 pb-3 pt-3 sm:pt-0 border-b-2 sm:border-b-0 border-dotted border-gray-100 bg-white dark:bg-gray-800 text-black dark:text-white";
+        div.innerHTML = `
+        <div class="flex-row sm:block hover-img">
+          <a href="${articles.url}">
+            <img class="max-w-full w-full mx-auto" src="${articles.image}" alt="alt title">
+          </a>
+        <div class="py-0 sm:py-3 pl-3 sm:pl-0">
+          <h3 class="text-lg font-bold leading-tight mb-2">
+            <a href="${articles.url}">${articles.title}</a>
+          </h3>
+            <p class="hidden md:block leading-tight mb-1">${articles.description}</p>
+            <a class="text-gray-500" href="${articles.url}"><span class="inline-block h-3 border-l-2 border-red-600 mr-2"></span>${articles.publishedAt}</span></a>
+        </div>
+        </div>
+        `;
+        document.querySelector("#entertainment-news").appendChild(div);
+      });
+    });
+  } catch (error) {
+    console.error("An error occurred:", error.message);
+  }
 }
 
+<<<<<<< HEAD
 // ========== { display FOREX from FastForex} ========== \\
+=======
+// // ========== { display sciTechCategoryPage from gnews.io} ========== \\
+async function scitechCategoryPage() {
+  try {
+    global.api.apiKeys = global.apiKey_11;
+    global.api.maxfetch = "9";
+    fetchAPIData("technology").then(function (data) {
+      scitecharticles = data.articles;
+      console.log(scitecharticles);
+
+      scitecharticles.forEach((articles) => {
+        const div = document.createElement("div");
+        div.classList =
+          "flex-shrink max-w-full w-full sm:w-1/3 px-3 pb-3 pt-3 sm:pt-0 border-b-2 sm:border-b-0 border-dotted border-gray-100 bg-white dark:bg-gray-800 text-black dark:text-white";
+        div.innerHTML = `
+        <div class="flex-row sm:block hover-img">
+          <a href="${articles.url}">
+            <img class="max-w-full w-full mx-auto" src="${articles.image}" alt="alt title">
+          </a>
+        <div class="py-0 sm:py-3 pl-3 sm:pl-0">
+          <h3 class="text-lg font-bold leading-tight mb-2">
+            <a href="${articles.url}">${articles.title}</a>
+          </h3>
+            <p class="hidden md:block leading-tight mb-1">${articles.description}</p>
+            <a class="text-gray-500" href="${articles.url}"><span class="inline-block h-3 border-l-2 border-red-600 mr-2"></span>${articles.publishedAt}</span></a>
+        </div>
+        </div>
+        `;
+        document.querySelector("#scitech-news").appendChild(div);
+      });
+    });
+  } catch (error) {
+    console.error("An error occurred:", error.message);
+  }
+}
+// // ========== { display sportsCategoryPage from gnews.io} ========== \\
+async function sportsCategoryPage() {
+  try {
+    global.api.apiKeys = global.apiKey_11;
+    global.api.maxfetch = "9";
+    fetchAPIData("sports").then(function (data) {
+      sportsarticles = data.articles;
+      console.log(sportsarticles);
+
+      sportsarticles.forEach((articles) => {
+        const div = document.createElement("div");
+        div.classList =
+          "flex-shrink max-w-full w-full sm:w-1/3 px-3 pb-3 pt-3 sm:pt-0 border-b-2 sm:border-b-0 border-dotted border-gray-100 bg-white dark:bg-gray-800 text-black dark:text-white";
+        div.innerHTML = `
+        <div class="flex-row sm:block hover-img">
+          <a href="${articles.url}">
+            <img class="max-w-full w-full mx-auto" src="${articles.image}" alt="alt title">
+          </a>
+        <div class="py-0 sm:py-3 pl-3 sm:pl-0">
+          <h3 class="text-lg font-bold leading-tight mb-2">
+            <a href="${articles.url}">${articles.title}</a>
+          </h3>
+            <p class="hidden md:block leading-tight mb-1">${articles.description}</p>
+            <a class="text-gray-500" href="${articles.url}"><span class="inline-block h-3 border-l-2 border-red-600 mr-2"></span>${articles.publishedAt}</span></a>
+        </div>
+        </div>
+        `;
+        document.querySelector("#sports-news").appendChild(div);
+      });
+    });
+  } catch (error) {
+    console.error("An error occurred:", error.message);
+  }
+}
+
+
+// // ========== { display FOREX from FastForex} ========== \\
+>>>>>>> b78738fd89bee61e7942c624e989c40d91fa1a5c
 async function displayForex() {
   try {
     //getting the date -1 ====================================================
@@ -939,6 +1144,7 @@ function init() {
       displayFacts();
       break;
     case "/src/business.html":
+<<<<<<< HEAD
       businessCategoryPage();
       break;
     case "/src/scitech.html":
@@ -947,6 +1153,16 @@ function init() {
     case "/src/entertainment.html":
       entertainmentCategoryPage();
       displayMovie();
+=======
+      // businessCategoryPage();
+      // displayForex();
+      break;
+    case "/src/scitech.html":
+      // scitechCategoryPage();
+      break;
+    case "/src/entertainment.html":
+      // entertainmentCategoryPage();
+>>>>>>> b78738fd89bee61e7942c624e989c40d91fa1a5c
       break;
     case "/src/sports.html":
       sportsCategoryPage();
@@ -973,7 +1189,10 @@ seeForecast.addEventListener("click", function () {
     window.location.href = "weather.html";
   }
 });
+var themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
+var themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
 
+<<<<<<< HEAD
 //==================={ START SEARCH }=========================\\
 async function searchpage() {
   try {
@@ -1172,6 +1391,45 @@ async function sportsCategoryPage() {
   }
 }
 
+=======
+// Change the icons inside the button based on previous settings
+if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    themeToggleLightIcon.classList.remove('hidden');
+} else {
+    themeToggleDarkIcon.classList.remove('hidden');
+}
+
+var themeToggleBtn = document.getElementById('theme-toggle');
+
+themeToggleBtn.addEventListener('click', function() {
+
+    // toggle icons inside button
+    themeToggleDarkIcon.classList.toggle('hidden');
+    themeToggleLightIcon.classList.toggle('hidden');
+
+    // if set via local storage previously
+    if (localStorage.getItem('color-theme')) {
+        if (localStorage.getItem('color-theme') === 'light') {
+            document.documentElement.classList.add('dark');
+            localStorage.setItem('color-theme', 'dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+            localStorage.setItem('color-theme', 'light');
+        }
+
+    // if NOT set via local storage previously
+    } else {
+        if (document.documentElement.classList.contains('dark')) {
+            document.documentElement.classList.remove('dark');
+            localStorage.setItem('color-theme', 'light');
+        } else {
+            document.documentElement.classList.add('dark');
+            localStorage.setItem('color-theme', 'dark');
+        }
+    }
+    
+});
+>>>>>>> b78738fd89bee61e7942c624e989c40d91fa1a5c
 async function displayFacts() {
   try {
     const response = await fetch(
@@ -1182,7 +1440,10 @@ async function displayFacts() {
         contentType: "application/json",
       }
     );
+<<<<<<< HEAD
 
+=======
+>>>>>>> b78738fd89bee61e7942c624e989c40d91fa1a5c
     if (!response.ok) {
       throw new Error("Request failed");
     }
@@ -1190,7 +1451,10 @@ async function displayFacts() {
     console.log(result);
     const div = document.createElement("div");
     div.classList = "w-full text-center";
+<<<<<<< HEAD
 
+=======
+>>>>>>> b78738fd89bee61e7942c624e989c40d91fa1a5c
     div.innerHTML = `
       <a href="#">
         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Did you know?</h5>
@@ -1202,6 +1466,7 @@ async function displayFacts() {
     console.error("Error:", error.message);
   }
 }
+<<<<<<< HEAD
 
 // darkmode
 var themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
@@ -1244,5 +1509,7 @@ themeToggleBtn.addEventListener('click', function () {
   }
 
 });
+=======
+>>>>>>> b78738fd89bee61e7942c624e989c40d91fa1a5c
 
 document.addEventListener("DOMContentLoaded", init);

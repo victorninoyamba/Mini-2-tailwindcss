@@ -221,9 +221,15 @@ div.border-b2m-white {
   transition: 250ms all ease;
 }
 
+<<<<<<< HEAD
 li:hover {
   opacity: 0.8;
   /* color: #ffffff; */
+=======
+li:hover{
+  opacity: .8;
+  
+>>>>>>> b78738fd89bee61e7942c624e989c40d91fa1a5c
 }
 
 #forecast-full-btn {
